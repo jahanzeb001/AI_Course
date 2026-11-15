@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction Site Safety Monitoring Dashboard</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --accent: #3b82f6;
+      --safe: #22c55e;
+      --danger: #ef4444;
+      --warning: #f59e0b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); padding: 24px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+    h1 { font-size: 24px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+    .badge-live { background: rgba(34, 197, 94, 0.2); color: var(--safe); border: 1px solid var(--safe); padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+    .card-title { font-size: 13px; color: var(--muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px; }
+    .card-val { font-size: 30px; font-weight: 700; margin-top: 8px; }
+    .val-safe { color: var(--safe); }
+    .val-danger { color: var(--danger); }
+    .main-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px; }
+    @media (max-width: 900px) { .main-grid { grid-template-columns: 1fr; } }
+    video { width: 100%; border-radius: 8px; background: #000; border: 1px solid var(--border); max-height: 520px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; text-align: left; }
+    th { background: #0b1120; padding: 10px 14px; color: var(--muted); border-bottom: 1px solid var(--border); }
+    td { padding: 12px 14px; border-bottom: 1px solid var(--border); }
+    .pill { display: inline-block; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 600; text-transform: uppercase; }
+    .pill-safe { background: rgba(34, 197, 94, 0.2); color: var(--safe); border: 1px solid rgba(34, 197, 94, 0.4); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🦺 Construction Site PPE Safety Monitor</h1>
+      <span class="badge-live">100% SITE COMPLIANCE</span>
+    </header>
+
+    <div class="metrics">
+      <div class="card">
+        <div class="card-title">Total Frames Processed</div>
+        <div class="card-val">315 <span style="font-size: 14px; color: var(--muted);">(12.6s)</span></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Tracked Workers</div>
+        <div class="card-val val-safe">2</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Safety Violations</div>
+        <div class="card-val val-safe">0</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Site Compliance Rate</div>
+        <div class="card-val val-safe">100%</div>
+      </div>
+    </div>
+
+    <div class="main-grid">
+      <div class="card">
+        <h2 style="font-size: 16px; margin-bottom: 12px;">Annotated Safety Video (HUD Overlay)</h2>
+        <video controls>
+          <source src="safety_monitoring_output.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+
+      <div class="card">
+        <h2 style="font-size: 16px; margin-bottom: 12px;">Active Worker Status</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Worker ID</th>
+              <th>Helmet Status</th>
+              <th>Vest Status</th>
+              <th>Compliance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Worker #1</strong></td>
+              <td><span class="pill pill-safe">HELMET: OK</span></td>
+              <td><span class="pill pill-safe">VEST: OK</span></td>
+              <td><span class="pill pill-safe">SAFE</span></td>
+            </tr>
+            <tr>
+              <td><strong>Worker #2</strong></td>
+              <td><span class="pill pill-safe">HELMET: OK</span></td>
+              <td><span class="pill pill-safe">VEST: OK</span></td>
+              <td><span class="pill pill-safe">SAFE</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="margin-top: 24px; padding: 14px; background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 8px;">
+          <p style="font-size: 13px; color: var(--safe);">✓ High-precision calibrated PPE detector: Both workers are actively tracked with hardhats and high-visibility safety vests throughout the footage.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

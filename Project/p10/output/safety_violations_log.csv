@@ -1,0 +1,32 @@
+Timestamp_Sec,Frame_Index,Worker_ID,Violation_Type,Severity,Confidence,Snapshot_File
+0.48,12,1,NO HELMET,WARNING,0.85,alert_f0012_worker_1.jpg
+1.20,30,2,NO HELMET,WARNING,0.85,alert_f0030_worker_2.jpg
+0.48,12,1,NO HELMET,WARNING,0.85,alert_f0012_worker_1.jpg
+1.20,30,2,NO HELMET,WARNING,0.85,alert_f0030_worker_2.jpg
+2.64,66,1,NO SAFETY VEST,WARNING,0.81,alert_f0066_worker_1.jpg
+2.72,68,2,NO HELMET,WARNING,0.91,alert_f0068_worker_2.jpg
+5.96,149,2,NO HELMET,WARNING,0.86,alert_f0149_worker_2.jpg
+0.48,12,1,NO HELMET,WARNING,0.85,alert_f0012_worker_1.jpg
+1.20,30,2,NO HELMET,WARNING,0.85,alert_f0030_worker_2.jpg
+2.52,63,1,NO SAFETY VEST,WARNING,0.84,alert_f0063_worker_1.jpg
+2.72,68,2,NO HELMET,WARNING,0.91,alert_f0068_worker_2.jpg
+0.48,12,1,NO HELMET,WARNING,0.85,alert_f0012_worker_1.jpg
+0.48,12,1,NO HELMET,WARNING,0.85,alert_f0012_worker_1.jpg
+1.20,30,2,NO HELMET,WARNING,0.85,alert_f0030_worker_2.jpg
+2.52,63,1,NO SAFETY VEST,WARNING,0.84,alert_f0063_worker_1.jpg
+2.72,68,2,NO HELMET,WARNING,0.91,alert_f0068_worker_2.jpg
+0.48,12,1,NO HELMET,WARNING,0.85,alert_f0012_worker_1.jpg
+0.48,12,1,NO HELMET,WARNING,0.85,alert_f0012_worker_1.jpg
+1.20,30,2,NO HELMET,WARNING,0.85,alert_f0030_worker_2.jpg
+2.64,66,1,NO SAFETY VEST,WARNING,0.79,alert_f0066_worker_1.jpg
+2.72,68,2,NO HELMET,WARNING,0.91,alert_f0068_worker_2.jpg
+0.48,12,1,NO HELMET,WARNING,0.85,alert_f0012_worker_1.jpg
+1.20,30,2,NO HELMET,WARNING,0.85,alert_f0030_worker_2.jpg
+5.96,149,2,NO HELMET,WARNING,0.85,alert_f0149_worker_2.jpg
+2.64,66,1,NO SAFETY VEST,WARNING,0.79,alert_f0066_worker_1.jpg
+2.72,68,2,NO HELMET,WARNING,0.91,alert_f0068_worker_2.jpg
+5.96,149,2,NO HELMET,WARNING,0.85,alert_f0149_worker_2.jpg
+0.48,12,1,NO HELMET,WARNING,0.85,alert_f0012_worker_1.jpg
+1.20,30,2,NO HELMET,WARNING,0.85,alert_f0030_worker_2.jpg
+2.64,66,1,NO SAFETY VEST,WARNING,0.79,alert_f0066_worker_1.jpg
+2.72,68,2,NO HELMET,WARNING,0.91,alert_f0068_worker_2.jpg
